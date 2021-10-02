@@ -4,19 +4,18 @@ import java.util.Scanner;
 
 public class PlotepjestimiINumrave {
     public static void main(String[] args) {
-        int number, i;
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the limit: ");
-        number = sc.nextInt();
-        i=2;
-        System.out.print("Lit of even numbers: ");
-//the while loop executes until the condition become false
-        while(i<=number)
-        {
-//prints the even number
-            System.out.print(i +" ");
-//increments the variable i by 2
-            i=i+2;
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Shkruaj numrin e pare: ");
+        int nr1 = reader.nextInt();
+        System.out.print("Shkruaj numrin e dyte: ");
+        int nr2 = reader.nextInt();
+
+        if (nr1%nr2 == 0) {
+            System.out.printf("%d eshte i plotepjestueshem me %d %n",nr1, nr2);
         }
+        else {
+            System.out.printf("%d nuk eshte i plotepjestueshem me %d %n",nr1, nr2);
+        }
+
     }
 }
