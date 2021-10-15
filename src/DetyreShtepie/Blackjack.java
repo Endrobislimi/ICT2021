@@ -33,9 +33,11 @@ public class Blackjack {
             System.out.println();
             while (true)
             {
-                System.out.print("Ju keni " + parat + " EURO. ");
+                System.out.println("Ju keni " + parat + " EURO. ");
+                System.out.println("Nese deshironi ta lini lojen shtypni 0");
                 do
                 {
+
                     System.out.print("Sa euro deshironi të vini bast: ");
                     basti = reader.nextInt();
                     if (basti < 0 || basti > parat)
