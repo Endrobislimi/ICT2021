@@ -26,9 +26,5 @@ public class DiceGame {
 
         System.out.println("Vlera e gjeneruar nga Zaret ishte: "+vlera);
 
-
-
-
-
     }
 }
